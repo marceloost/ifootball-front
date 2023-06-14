@@ -24,26 +24,14 @@ const Login = () => {
         <div>
             <h1>IFootball</h1>
             <form onSubmit={handleSubmit}>
-                <label>
-                    Email
-                    <input
-                        type="email"
-                        name="email"
-                        value={form.email}
-                        onChange={handleChange}
-                    />
-                </label>
-                <br />
-                <label>
-                    Senha
-                    <input
-                        type="password"
-                        name="senha"
-                        value={form.senha}
-                        onChange={handleChange}
-                    />
-                </label>
-                <br />
+                <div></div>
+                
+                <label>Email</label>
+                <input type="email" name="email" onChange={handleChange} required/>
+                
+                <label>Senha</label>
+                <input type="password" name="senha" onChange={handleChange} required/>
+                
                 <button type="submit">Entrar</button>
             </form>
         </div>
